@@ -11,6 +11,11 @@ app.use(express.static("public"));
 app.get("/", (req, res) => {
   res.render("createcard");
 });
+
+app.post("/", (req, res) => {
+  res.render("homepage");
+});
+
 app.get("/people/:id", (req, res) => {
   res.render("people");
 });
